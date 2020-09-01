@@ -26,6 +26,8 @@ async function main() {
     next();
   });
 
+  //   app.use("/api/passwords", createPasswordsRouter(database, masterPassword));
+
   app.get("/api/passwords/:name", async (request, response) => {
     try {
       const { name } = request.params;
